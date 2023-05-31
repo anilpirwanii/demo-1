@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="histogram.css">
+    <script src="calculate.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h2>
+        Histogram Generator
+    </h2>
+        <div class="left-table">
+            <table>
+                <tr>
+                    <td>
+                        <h3>
+                            <span style="color: #b5131a;"><b>Lower bounds</b></span>
+                        </h3>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>Max<br><br></td>
+                       <td> <input type="text" class="input-number" data-index="1" value=100.00>
+                        <span class="feedback" data-index="1"></span></td>
+                    
+                </tr>
+                <tr>
+                    <td class="indent-x">A+<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="2" value=95.00>
+                        <span class="feedback" data-index="2"></span></td>
+                </tr>
+                <tr>
+                    <td class="indent-x">A<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="3" value=90.00>
+                            <span class="feedback" data-index="3"></span></td>
+                    
+                </tr>
+                <tr>
+                    <td class="indent-x">A-<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="4" value=85.00>
+                            <span class="feedback" data-index="4"></span></td>
+                </tr>
+                <tr>
+                    <td class="indent-x">B+<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="5" value=80.00>
+                        <span class="feedback" data-index="5"></span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="indent-x">B<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="6" value=75.00>
+                        <span class="feedback" data-index="6"></span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="indent-x">B-<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="7" value=70.00>
+                        <span class="feedback" data-index="7"></span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="indent-x">C+<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="8" value=65.00>
+                        <span class="feedback" data-index="8"></span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="indent-x">C<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="9" value=60.00>
+                        <span class="feedback" data-index="9"></span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="indent-x">C-<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="10" value=55.00>
+                        <span class="feedback" data-index="10"></span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="indent-x">D<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="11" value=50.00>
+                        <span class="feedback" data-index="11"></span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="indent-x">F<br><br></td>
+                        <td> <input type="text" class="input-number" data-index="12" value=0.00>
+                        <span class="feedback" data-index="12"></span></td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="right-tables"> 
+            <table>
+                <tr>
+                    <td>
+                        <h3>
+                            <span style="color: #b5131a;"><b>Histogram</b></span>
+                        </h3>
+                    </td>
+                </tr>
+            <div class="right-table">
+                <tr>
+                    <td class="column1">A+<br><br>
+                     </td>
+                     <td class="column2"> <div class = "histogram", id = "histogram1"> 
+                        <div class="hist-inner"></div>
+                     </div>
+                     </td>
+                </tr>
+                <tr>
+                    <td class="column1">A<br><br>
+                     </td>
+                     <td class="column2"> <div class = "histogram", id = "histogram2"> 
+                        <div class="hist-inner"></div>
+                     </div></td>
+                </tr>
+                <tr>
+                    <td class="column1">A-<br><br>
+                     </td>
+                     <td class="column2"> <div class = "histogram", id = "histogram3"> 
+                        <div class="hist-inner"></div>
+                     </div>
+                     </td>
+                </tr>
+                <tr>
+                    <td class="column1">B+<br><br>
+                     </td>
+                     <td class="column2"> <div class = "histogram", id = "histogram4"> 
+                        <div class="hist-inner"></div>
+                     </div>
+                     </td>
+                </tr>
+                <tr>
+                    <td class="column1">B<br><br>
+                     </td>
+                                          <td class="column2"> <div class = "histogram", id = "histogram5"> 
+                        <div class="hist-inner"></div>
+                     </div>
+                     </td>
+                </tr>
+                <tr>
+                    <td class="column1">B-<br><br>
+                     </td>
+                                          <td class="column2"> <div class = "histogram", id = "histogram6"> 
+                        <div class="hist-inner"></div>
+                     </div>
+                     </td>
+                </tr>
+                <tr>
+                    <td class="column1">C+<br><br>
+                     </td>
+                                          <td class="column2"> <div class = "histogram", id = "histogram7"> 
+                        <div class="hist-inner"></div>
+                     </div>
+                     </td>
+                </tr>
+                <tr>
+                    <td class="column1">C<br><br>
+                     </td>
+                                          <td class="column2"> <div class = "histogram", id = "histogram8"> 
+                        <div class="hist-inner"></div>
+                     </div>
+                     </td>
+                </tr>
+                <tr>
+                    <td class="column1">C-<br><br>
+                     </td>
+                                          <td class="column2"> <div class = "histogram", id = "histogram9"> 
+                        <div class="hist-inner"></div>
+                     </div>
+                     </td>
+                </tr>
+                <tr>
+                    <td class="column1">D<br><br>
+                     </td>
+                                          <td class="column2"> <div class = "histogram", id = "histogram10"> 
+                        <div class="hist-inner"></div>
+                     </div>
+                     </td>
+                </tr>
+                <tr>
+                    <td class="column1">F<br><br>
+                     </td>
+                                          <td class="column2"> <div class = "histogram", id = "histogram11"> 
+                        <div class="hist-inner"></div>
+                     </div>
+                     </td>
+                </tr>
+            </table> 
+            </div>
+            <div class="right-table">
+                <table>
+                    <tr>
+                        <td>New Grade:</td> 
+                        <td> <input type="text" id="myInput">
+                            <button onclick="updateHistogramSubmit()">Submit</button>
+                        </td>
+                        <span class="feedback"></span>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
