@@ -24,7 +24,7 @@ h2 {
     display: flex;
     flex-direction: column;
     position: relative;
-    right: 210px;
+    left:0px;
     height: 50px;
 }
 
@@ -33,7 +33,7 @@ h2 {
     height: 100px;
     position: relative;
     top: 400px;
-    right: 350px;
+    left: 0px;
 }
 
 table {
