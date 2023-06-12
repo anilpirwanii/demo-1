@@ -1,6 +1,5 @@
 package com.example.demo.controllers;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.example.demo.models.User;
 import com.example.demo.models.UserRepository;
 
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletResponse;
 
 @Controller
